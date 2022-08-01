@@ -6,7 +6,7 @@ set -o nounset
 
 cd /input
 
-for file in *.heic
+for file in *.HEIC
 do
-  heif-convert -q 100 "$file" "/output/${file%.heic}.jpg"
+  heif-convert -q 100 "$file" "/output/${file%.HEIC}.jpg"
 done
